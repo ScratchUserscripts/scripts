@@ -1,12 +1,13 @@
 // ==UserScript==
-// @name         ToTheForum
-// @namespace    http://tampermonkey.net/
-// @version      0.1
+// @name         ToTheForums
+// @namespace    https://scratch.mit.edu/studios/4156569/
+// @version      1.0
 // @description  This US takes the user to the forums on a click of a button
-// @author       You
+// @author       Csf30816
 // @match        http*://scratch.mit.edu/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @require      https://matthias-vogt.github.io/legitRipple.js/js/ripple.js
+// @update-url   https://scratchuserscripts.github.io/scripts/ToTheForums/ToTheForums.user.js
 // @run-at       document-body
 // @grant        none
 // ==/UserScript==
@@ -29,7 +30,9 @@
         'border':'0',
         'border-radius':'100%',
         'padding':'0',
-        'outline':'none'
+        'outline':'none',
+        'z-index':'50000',
+        'box-shadow':'0 2px 2px rgba(0, 0, 0, 0.37)'
     });
     $('._FAB1_').ripple();
 })();
